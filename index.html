@@ -165,8 +165,7 @@ code {
 			<p>
 				{{ if and .Project (and .Region .Service)  }}
 					This created the revision <code>{{.Revision}}</code> of the Cloud Run service <code>{{.Service}}</code>
-					{{if .Region}} in <code>{{.Region}}</code>{{end}}
-					{{if .Project}} in the GCP project <code>{{.Project}}</code>{{end}}.
+					{{if .Region}} in <code>{{.Region}}</code>{{end}}..
 				{{ else }}
 					This container <strong>does not</strong> seem to be running
 					on Cloud Run.
